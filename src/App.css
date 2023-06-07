@@ -7,6 +7,99 @@
   pointer-events: none;
 }
 
+.navbar {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-section a {
+  margin-right: 10px;
+  color: #666;
+  text-decoration: none;
+}
+
+.right-section a {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.carousel-container {
+  
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: 1.5%;
+}
+
+.carousel-container .carousel .slide img {
+  max-height: 400px;
+}
+
+.carousel-container .legend {
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  text-align: center;
+}
+
+.carousel-container .thumbs-wrapper {
+  display: none;
+}
+.cards-container {
+  margin: 1% 27%;
+}
+
+.cards-container .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.cards-container .card {
+  margin: 1% 1%;
+  width: calc(50%);
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.cards-container .card:hover {
+  transform: translateY(-5px);
+}
+
+.cards-container .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.cards-container .card-content {
+  padding: 10px 0;
+}
+
+.cards-container .card-content h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.cards-container .card-content a {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.cards-container .card-content a:hover {
+  text-decoration: underline;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

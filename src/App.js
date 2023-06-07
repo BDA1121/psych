@@ -1,25 +1,59 @@
-import logo from './logo.svg';
 import './App.css';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import Navbar from './subparts/nav';
+import Car from './subparts/caraousal';
+import image1 from './images/psy.jfif';
+import image2 from './images/ther.jfif';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navbar />
+      <Car />
+      <div className="cards-container">
+        <div className="row">
+          <div className="card">
+            <img src={image1} alt="Card 1" />
+            <div className="card-content">
+              <h3><a href="/link1">Book Session with Psychiatrist</a></h3>
+              
+            </div>
+          </div>
+          <div className="card">
+            <img src={image2} alt="Card 2" />
+            <div className="card-content">
+              <h3><a href="/link2">Book Session with Therapist</a></h3>
+              
+            </div>
+          </div>
+        </div>
+        <div className="row">
+          <div className="card">
+            <img src="card3.jpg" alt="Article 1" />
+            <div className="card-content">
+              <h3>Article heading</h3>
+              <a href="/link3">Learn More</a>
+            </div>
+          </div>
+          <div className="card">
+            <img src="card4.jpg" alt="Article 2" />
+            <div className="card-content">
+              <h3>Article heading</h3>
+              <a href="/link4">Learn More</a>
+            </div>
+          </div>
+          <div className="card">
+            <img src="card5.jpg" alt="Article 3" />
+            <div className="card-content">
+              <h3>Article heading</h3>
+              <a href="/link5">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Rest of the website content */}
     </div>
   );
-}
+};
 
 export default App;

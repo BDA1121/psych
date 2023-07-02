@@ -1,6 +1,7 @@
 import { Carousel } from 'react-responsive-carousel';
 import imageCar1 from './../images/carousal1.jpg';
 import image1 from './../images/psy.jfif';
+import './styles/carousal.css';
 import image2 from './../images/ther.jfif';
 const HomePage = () => {
     return (

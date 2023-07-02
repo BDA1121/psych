@@ -12,10 +12,10 @@ const Navbar = () => {
                <NavLink to="/therapists" activeClassName="active" inactiveClassName="inactive">Therapists</NavLink>
             
                <NavLink to="/aboutus" activeClassName="active" inactiveClassName="inactive">AboutUs</NavLink>
-            
+               <NavLink to="/forum" activeClassName="active" inactiveClassName="inactive">Forum   </NavLink>
           </div>
           <div className="right-section">
-            <a href="/">Signup</a>
+            <a href="/signup">Signup</a>
           </div>
         </div>
       </nav>

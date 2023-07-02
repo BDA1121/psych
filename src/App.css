@@ -6,7 +6,6 @@
   height: 40vmin;
   pointer-events: none;
 }
-
 .navbar {
   background-color: #f0f0f0;
   padding: 10px;
@@ -30,27 +29,15 @@
   text-decoration: none;
 }
 
-.carousel-container {
-  
-  max-width: 900px;
-  margin: 0 auto;
-  margin-top: 1.5%;
+
+
+.navbar .active{
+  color: #666;
+  text-decoration: none;
+  /* font-weight: lighter; */
 }
 
-.carousel-container .carousel .slide img {
-  max-height: 400px;
-}
 
-.carousel-container .legend {
-  color: #fff;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  text-align: center;
-}
-
-.carousel-container .thumbs-wrapper {
-  display: none;
-}
 .cards-container {
   margin: 1% 27%;
 }
@@ -100,78 +87,7 @@
 .cards-container .card-content a:hover {
   text-decoration: underline;
 }
-.navbar .active{
-  color: #666;
-  text-decoration: none;
-  /* font-weight: lighter; */
-}
 
-
-.container-page {
-  margin-top: 1%;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.container {
-  margin: 2px 25%;
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  transition: box-shadow 0.3s, outline 0.3s;
-}
-
-.container:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-}
-.container:focus {
-  outline: 2px solid blue;
-}
-.container-content {
-  display: flex;
-  width: 100%;
-  
-}
-
-.container-text {
-  flex: 1;
-}
-
-.container-text h3 {
-  margin-top: 0;
-}
-
-.container-image {
-  flex: 1;
-  display: flex;
-  /* justify-content: ; */
-}
-.container:nth-child(1) {
-  background-color: #ffcccc; /* Example color grading for container 1 */
-}
-
-.container:nth-child(2) {
-  background-color: #ffe6cc; /* Example color grading for container 2 */
-}
-
-.container:nth-child(3) {
-  background-color: #ffffcc; /* Example color grading for container 3 */
-}
-
-.container:nth-child(4) {
-  background-color: #ccffcc; /* Example color grading for container 4 */
-}
-
-.container:nth-child(5) {
-  background-color: #ccf5ff; /* Example color grading for container 5 */
-}
-.container-image img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

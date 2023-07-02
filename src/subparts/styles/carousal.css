@@ -1,0 +1,21 @@
+.carousel-container {
+  
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 1.5%;
+  }
+  
+  .carousel-container .carousel .slide img {
+    max-height: 400px;
+  }
+  
+  .carousel-container .legend {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .carousel-container .thumbs-wrapper {
+    display: none;
+  }

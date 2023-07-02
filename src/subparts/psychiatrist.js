@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import image1 from './../images/psy.jfif';
-
+import { Link } from 'react-router-dom';
+import './styles/container.css';
 const PsychiatristsPage = () => {
     const [isFlipped, setIsFlipped] = useState(false);
 
@@ -14,6 +15,10 @@ const PsychiatristsPage = () => {
             <div className="container-text">
               <h3>Our Psychiatrists</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <Link to="/">
+                <button>Know more</button>
+              </Link>
             </div>
             <div className="container-image">
               <img src={image1} alt="Container 1" />
@@ -28,6 +33,9 @@ const PsychiatristsPage = () => {
             <div className="container-text">
               <h3>Consultation</h3>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <Link to="/schedule">
+                <button>Schedule One now</button>
+              </Link>
             </div>
           </div>
         </div>

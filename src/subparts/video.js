@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import SimplePeer from 'simple-peer';
+// import SimplePeer from 'simple-peer';
 
 const VideoConferencePage = () => {
   const localVideoRef = useRef(null);
